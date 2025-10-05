@@ -30,12 +30,13 @@ form.addEventListener("submit", async (event) => {
     status.style.color = "lightgreen";
 
     setTimeout(() => {
-      // Detecta o caminho base automaticamente (local ou GitHub Pages)
-      const basePath = window.location.pathname.includes("MoodPlaylist-FrontEnd")
-        ? "./MoodPlaylist-FrontEnd/"
+      const basePath = window.location.hostname.includes("github.io")
+        ? "/MoodPlaylist-FrontEnd/"
         : "../";
+
       window.location.href = `${basePath}home.html`;
-    }, 1500);
+  }, 1500);
+
   } catch (error) {
     status.textContent = `❌ ${(error as string)}`;
     status.style.color = "#ff8080";
