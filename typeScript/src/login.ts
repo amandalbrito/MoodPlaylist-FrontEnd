@@ -28,6 +28,10 @@ form.addEventListener("submit", async (event) => {
     const user = await login(email, password);
     status.textContent = `✅ Login bem-sucedido! Bem-vindo, ${user.email}`;
     status.style.color = "lightgreen";
+
+    setTimeout(() => {
+      window.location.href = "../home.html";
+    }, 1500);
   } catch (error) {
     status.textContent = `❌ ${(error as string)}`;
     status.style.color = "#ff8080";
