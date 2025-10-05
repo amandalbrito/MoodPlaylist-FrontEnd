@@ -25,7 +25,10 @@ form.addEventListener("submit", async (event) => {
         status.textContent = `✅ Login bem-sucedido! Bem-vindo, ${user.email}`;
         status.style.color = "lightgreen";
         setTimeout(() => {
-            window.location.href = "../home.html";
+            const basePath = window.location.hostname.includes("github.io")
+                ? "/MoodPlaylist-FrontEnd/"
+                : "../";
+            window.location.href = `${basePath}home.html`;
         }, 1500);
     }
     catch (error) {
