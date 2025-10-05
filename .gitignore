@@ -4,6 +4,9 @@ node_modules/
 # Saída de build do TypeScript
 build/
 dist/
+node_modules/
+src/
+.env
 
 # Arquivos de logs
 npm-debug.log*
