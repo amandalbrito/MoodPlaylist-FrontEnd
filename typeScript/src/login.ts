@@ -30,7 +30,7 @@ form.addEventListener("submit", async (event) => {
     status.style.color = "lightgreen";
 
     setTimeout(() => {
-      window.location.href = "home.html";
+      window.location.href = "MoodPlaylist-FrontEnd/home.html";
     }, 1500);
   } catch (error) {
     status.textContent = `❌ ${(error as string)}`;
