@@ -132,12 +132,26 @@ button{
     cursor: pointer;
 }
 
+@media(max-width: 900px){
+    .titulo{
+        font-size: 4rem;
+    }
+    .img-logo{
+        width: 9vw;
+        height: 8vh;
+    }
+    .logo-gif{
+        height: 1.5vh;
+    }
+}
 
-@media(max-width: 600px){
+
+@media(max-width: 700px){
     .titulo{
         font-size: 3rem;
     }
     .img-logo{
+        width: 10vw;
         height: 13vh;
     }
     .logo-gif{
@@ -148,9 +162,9 @@ button{
     }
 }
 
-@media(max-width: 400px){
+@media(max-width: 500px){
     .img-logo{
-        height: 10vh;
+        height: 8vh;
     }
     .logo-gif{
         height: 1vh;
