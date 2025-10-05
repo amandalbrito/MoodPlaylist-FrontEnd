@@ -29,6 +29,7 @@ form.addEventListener("submit", async (event) => {
     status.textContent = `✅ Login bem-sucedido! Bem-vindo, ${user.email}`;
     status.style.color = "lightgreen";
 
+    //direcionameto de página para rodar localmente e no github
     setTimeout(() => {
       const basePath = window.location.hostname.includes("github.io")
         ? "/MoodPlaylist-FrontEnd/"
