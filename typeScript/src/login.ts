@@ -32,8 +32,8 @@ form.addEventListener("submit", async (event) => {
     setTimeout(() => {
       // Detecta o caminho base automaticamente (local ou GitHub Pages)
       const basePath = window.location.pathname.includes("MoodPlaylist-FrontEnd")
-        ? "/MoodPlaylist-FrontEnd/"
-        : "./";
+        ? "./MoodPlaylist-FrontEnd/"
+        : "../";
       window.location.href = `${basePath}home.html`;
     }, 1500);
   } catch (error) {
