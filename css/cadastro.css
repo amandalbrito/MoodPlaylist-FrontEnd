@@ -1,0 +1,142 @@
+.container {
+  display: flex;
+  padding: 1rem;
+  flex-direction: column;
+  align-self: center;
+  text-align: center;
+  width: 95vw;
+  color: #fefefe;
+}
+
+h1{
+  color: #0857A0;
+  font-weight: bold;
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.45), 4px 4px 10px rgba(0, 0, 0, 0.3);
+  font-size: 3.5rem;
+}
+
+.form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1rem;
+  gap: 0.5rem;
+}
+
+input {
+  width: 80vw;
+  margin: 0.5rem 0;
+  padding: 0.8rem;
+  border: none;
+  border-radius: 15px;
+  background-color: #0856a098;
+}
+
+::placeholder{
+  color: #0857A0;
+  font-weight: bold;
+}
+
+.btn-password{
+  display: flex;
+  width: 10vw;
+  height: 4vh;
+  border-radius: 35px;
+  padding: 2px;
+  align-items: center;
+  justify-content: center;
+  margin-left: 86%;
+  margin-top: -2.5rem;
+  background-color: #002d68;
+  color: #fff;
+  z-index: 1000;
+}
+
+.input-wrapper {
+  position: relative;
+  display: inline-block;
+}
+.input-wrapper .placeholder {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #0857A0;
+  font-weight: bold;
+  pointer-events: none;
+  z-index: 1000;
+  font-size: 0.8rem;
+}
+
+.input-wrapper input:focus + .placeholder,
+.input-wrapper input:valid + .placeholder {
+  display: none; /* esconde o placeholder quando o campo tem valor */
+}
+
+
+.cadastro{
+  color: #0857A0;
+  font-size: 0.7rem;
+  cursor: pointer;
+}
+
+.entrar {
+  background-color: #0857A0;
+  color: #fff;
+  border: 1px solid #000;
+  border-radius: 35px;
+  padding: 0.8rem;
+  font-size: 0.9rem;
+  width: 70vw;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.2s;
+  justify-content: center;
+  margin-top: 10%;
+}
+
+#status {
+  margin-top: 1rem;
+  font-weight: 500;
+}
+
+@media(max-width: 900px){
+  h1{
+    font-size: 3rem;
+  }
+  .img-logo{
+    width: 6vw;
+    height: 7vh;
+  }
+  .logo-gif{
+    width: 1vw;
+    height: 1vh;
+  }
+}
+
+
+@media(max-width: 700px){
+  h1{
+      font-size: 2rem;
+  }
+  .img-logo{
+      width: 5vw;
+      height: 6vh;
+  }
+  .logo-gif{
+    width: 1vw;
+    height: 1.5vh;
+  }
+  .cadastro{
+    font-size: 0.8rem;
+  }
+}
+
+@media(max-width: 500px){
+  .img-logo{
+    height: 6vh;
+  }
+  .logo-gif{
+    height: 1vh;
+  }
+}

@@ -4,11 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastre-se</title>
+    <link rel="stylesheet" href="./css/global.css">
     <link rel="stylesheet" href="./css/cadastro.css">
 </head>
 <body>
 
-    <form class="login-form">
+  <!-- ONDA DECORATIVA - PICO FINO NO CENTRO -->
+  <div class="wave-container">
+    <svg viewBox="0 0 1400 120" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" aria-hidden="true">
+      <defs>
+        <linearGradient id="gradient" x1="1" y1="1" x2="1" y2="0">
+          <stop offset="30%" stop-color="#00BBF9" /> 
+          <stop offset="80%" stop-color="#7D2DDD" />
+        </linearGradient>
+      </defs>
+
+      <!-- path com duas grandes colinas e um pico fino no centro -->
+      <path fill="url(#gradient)" d="
+        M0,0 
+        L0,125
+        C450,20 700,10 750,200
+        C600,0 1100,0 1650,200
+        L1440,0
+        Z"/>
+    </svg>
+  </div>
+
+  <div class="container">
+
+    <h1>Cadastre-se</h1>
+
+    <form class="form">
       <input type="email" id="email" placeholder="E-mail" required />
 
       <input type="email" id="email" placeholder="Confirme seu E-mail" required />
@@ -17,9 +43,23 @@
 
       <input type="password" id="password" placeholder="Confirme sua Senha" required />
 
-      <a href="home.html"><button type="submit">Entrar</button></a>
+      <div class="input-wrapper">
+        <input type="date" id="date" required />
+        <span class="placeholder">Data de Nascimento</span>
+      </div>
+
+
+      <h2 class="cadastro"><a href="cadastro.html"><a href="redefinir.html">Esqueceu a senha? REDEFINIR</a></h2>
+
+      <a href="home.html"><button type="submit" class="entrar">Entrar</button></a>
     </form>
 
-    <a href="home.html"><button>Cadastre-se</button></a>
+    <div class="logo">
+        <img src="./img/logo.png" alt="logo VibeLog azul" class="img-logo">
+        <p class="logo-gif"></p>
+    </div>
+    
+  </div>
+
 </body>
 </html>
