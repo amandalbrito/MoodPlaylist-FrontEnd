@@ -39,9 +39,17 @@
 
       <input type="email" id="email" placeholder="Confirme seu E-mail" required />
 
-      <input type="password" id="password" placeholder="Senha" required />
+      <div class="containerPassword">
+        <input type="password" id="password" placeholder="Senha" required />
 
-      <input type="password" id="password" placeholder="Confirme sua Senha" required />
+        <button class="btn-password" type="button">Mostrar</button>
+      </div>
+
+      <div class="containerPassword">
+        <input type="password" id="confirmePassword" placeholder="Confirme sua Senha" required />
+
+        <button class="btn-confirmePassword" type="button">Mostrar</button>
+      </div>
 
       <div class="input-wrapper">
         <input type="date" id="date" required />
@@ -60,6 +68,8 @@
     </div>
     
   </div>
+
+  <script src="./js/btnPassword.js"></script>
 
 </body>
 </html>

@@ -1,5 +1,7 @@
 const btnPassword = document.querySelector('.btn-password');
-const inputPassword = document.querySelector('#password'); // supondo que exista um input com esse id
+const btnConfirmePassword = document.querySelector('.btn-confirmePassword')
+const inputPassword = document.querySelector('#password');
+const inputConfirmePassword = document.querySelector('#confirmePassword');
 let showPassword = false;
 
 btnPassword.addEventListener('click', () => {
@@ -9,3 +11,12 @@ btnPassword.addEventListener('click', () => {
 
   btnPassword.textContent = showPassword ? 'Ocultar' : 'Mostrar';
 });
+
+btnConfirmePassword.addEventListener('click', () => {
+  showPassword = !showPassword;
+
+  inputConfirmePassword.type = showPassword ? 'text' : 'password';
+
+  btnConfirmePassword.textContent = showPassword ? 'Ocultar' : 'Mostrar';
+});
+
