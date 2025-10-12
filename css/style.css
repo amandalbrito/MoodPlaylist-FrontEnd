@@ -39,6 +39,7 @@ body{
 .titulo{
     color: #eee;
     font-size: 4rem;
+    box-shadow:  10px  rgba(0, 0, 0, 0.973);
 }
 
 .logo{
@@ -122,12 +123,6 @@ button{
     color: #eee;
     width: 50vw;
     height: 6vh;
-    font-size: 1rem;
-    cursor: pointer;
-}
-
-.cadastro{
-    color: #00000091;
     font-size: 1rem;
     cursor: pointer;
 }
