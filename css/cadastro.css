@@ -39,31 +39,33 @@ input {
 
 .btn-password{
   display: flex;
-  width: 10vw;
+  width: 15vw;
   height: 4vh;
   border-radius: 35px;
   padding: 2px;
   align-items: center;
   justify-content: center;
-  margin-left: 86%;
+  margin-left: 80%;
   margin-top: -2.5rem;
   background-color: #002d68;
   color: #fff;
+  font-size: 0.7rem;
   z-index: 1000;
 }
 
 .btn-confirmePassword{
   display: flex;
-  width: 10vw;
+  width: 15vw;
   height: 4vh;
   border-radius: 35px;
   padding: 2px;
   align-items: center;
   justify-content: center;
-  margin-left: 86%;
+  margin-left: 80%;
   margin-top: -2.5rem;
   background-color: #002d68;
   color: #fff;
+  font-size: 0.7rem;
   z-index: 1000;
 }
 
@@ -124,7 +126,7 @@ input {
 
 @media(max-width: 700px){
   h1{
-      font-size: 2rem;
+    font-size: 2rem;
   }
   .cadastro{
     font-size: 0.8rem;
