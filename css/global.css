@@ -139,3 +139,40 @@ body {
     opacity: 0;
   }
 }
+
+@media(max-width: 900px){
+  h1{
+    font-size: 3rem;
+  }
+  .img-logo{
+    width: 6vw;
+    height: 7vh;
+  }
+  .logo-gif{
+    width: 1vw;
+    height: 1vh;
+  }
+}
+
+@media(max-width: 700px){
+  h1{
+      font-size: 2rem;
+  }
+  .img-logo{
+  
+      height: 5vh;
+  }
+  .logo-gif{
+    width: 1vw;
+    height: 1.5vh;
+  }
+}
+
+@media(max-width: 500px){
+  .img-logo{
+    height: 4vh;
+  }
+  .logo-gif{
+    height: 0.8vh;
+  }
+}
