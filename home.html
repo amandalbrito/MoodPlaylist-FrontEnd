@@ -4,9 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página Inicial</title>
+    <link rel="stylesheet" href="./css/global.css">
     <link rel="stylesheet" href="./css/home.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <h1>funfou</h1>
+
+  <!-- ONDA DECORATIVA - PICO FINO NO CENTRO -->
+  <div class="wave-container">
+    <svg viewBox="0 0 1400 120" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" aria-hidden="true">
+      <defs>
+        <linearGradient id="gradient" x1="1" y1="1" x2="1" y2="0">
+          <stop offset="30%" stop-color="#00BBF9" /> 
+          <stop offset="80%" stop-color="#7D2DDD" />
+        </linearGradient>
+      </defs>
+
+      <!-- path com duas grandes colinas e um pico fino no centro -->
+      <path fill="url(#gradient)" d="
+        M0,0
+        L0,120
+        C850,50 900,0 1440,115
+        L1440,0
+        Z"/>
+    </svg>
+  </div>
+
+    <!-- Botão para abrir o menu -->
+    <button class="menu-toggle" id="openMenu">
+        <i class="fa fa-bars"></i>
+    </button>
+
+    <script src="./js/menuLateral.js"></script>
 </body>
 </html>
