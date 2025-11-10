@@ -1,4 +1,5 @@
 "use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
 // Função de login simulada (com Promise)
 function login(email, password) {
     return new Promise((resolve, reject) => {
