@@ -10,6 +10,7 @@ h1{
   padding: 2rem;
   flex-direction: column;
   align-self: center;
+  justify-content: center;
   text-align: center;
   width: 95vw;
   color: #fefefe;

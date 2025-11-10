@@ -43,11 +43,10 @@ body {
   margin: 0;
 }
 
-/* controla a altura visual da onda — aumente se quiser o efeito mais pronunciado */
 .wave-container svg {
   display: block;
   width: 100%;
-  height: 20vh;
+  height: 17vh;
 }
 
 /* svg que cria a onda */
