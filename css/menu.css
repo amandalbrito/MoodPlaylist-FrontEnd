@@ -2,6 +2,15 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
+    li{
+        list-style: none;
+    }
+
+    a{
+        text-decoration: none;
+        color: inherit;
+    }
 }
 
 body{ 
@@ -9,8 +18,8 @@ body{
 }
 
 .container{
-    width: 90vw;
-    height: 95vh;
+    width: 95vw;
+    height: 98vh;
     background: linear-gradient(#9B5DE5, #00BBF9);
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
     color: white;
@@ -21,9 +30,38 @@ body{
     overflow: hidden;
 }
 
+.btnMenu{
+    position: fixed;
+    top: 30px;
+    left: 20px;
+    width: 10vw;
+    height: 10vw;
+    padding: 0.35rem;
+    background: #AC72F2;
+    border: none;
+    border-radius: 50%;
+    color: #ffffff;
+    cursor: pointer;
+    z-index: 3000;
+    transition: transform 0.3s ease;
+}
+
+.pulse {
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% { transform: scale(0.5) }
+    10% { transform: scale(0.5) }
+    20% { transform: scale(0.5) }
+    30% { transform: scale(0.5) }
+    40% { transform: scale(0.8) }
+    100% { transform: scale(0.5) }
+}
+
 .avatar {
-    width: 90px;
-    height: 90px;
+    width: 35vw;
+    height: 20vh;
     border-radius: 50%;
     overflow: hidden;
     border: 3px solid rgba(255, 255, 255, 0.7);
@@ -53,15 +91,11 @@ body{
     gap: 10px;
 }
 
-.menu-item {
+.nav-links {
     width: 100%;
     padding: 18px 20px;
     font-size: 16px;
     border-top: 1px solid rgba(255, 255, 255, 0.25);
     transition: background 0.3s ease;
     cursor: pointer;
-}
-
-.menu-item:hover {
-    background: rgba(255, 255, 255, 0.15);
 }
