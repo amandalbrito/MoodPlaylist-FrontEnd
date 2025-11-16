@@ -19,12 +19,45 @@
     }
 }
 
+body{ 
+    font-family: 'Poppins';
+}
+
+.saudacao{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    display: flex;
+    font-size: 1.3rem;
+    color: #333333;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+    color: #0857A0;
+    font-weight: bold;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.45), 4px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+h2{
+    display: flex;
+    font-size: 1rem;
+    color: #333333;
+    justify-content: start;
+    align-items: start;
+    margin-top: 3%;
+    max-width: 60vw;
+}
+
 .container-emocoes{
     width: 100vw;
     height: 100vh;
     display: flex;
     align-items: center;
-    margin-top: 4rem;
+    margin-top: 2rem;
     flex-direction: column;
 }
 

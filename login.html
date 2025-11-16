@@ -32,10 +32,10 @@
     <h1>Login</h1>
 
     <form class="login-form">
-      <input type="email" id="email" placeholder="E-mail" required />
+      <input type="email" id="email" placeholder="E-mail" required/>
 
       <div class="containerPassword">
-        <input type="password" id="password" placeholder="Senha" required />
+        <input type="password" id="password" placeholder="Senha" required/>
 
         <button class="btn-password" type="button">Mostrar</button>
       </div>
@@ -53,15 +53,5 @@
   </div>
 
   <script type="module" src="./js/btnPassword.js"></script>
-  <script>
-    // salva email digitado em localStorage e redireciona
-    document.getElementById('btnEntrar').addEventListener('click', function (){
-      const emailInput = document.getElementById('email');
-      if (emailInput && emailInput.value) {
-        localStorage.setItem('userEmail', emailInput.value);
-      }
-      window.location.href = 'registroEmocoes.html';
-    });
-  </script>
 </body>
 </html>
