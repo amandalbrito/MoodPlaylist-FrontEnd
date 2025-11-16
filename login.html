@@ -42,7 +42,7 @@
       
       <h2 class="cadastro"><a href="cadastro.html">Não tem uma conta? Cadastre-se!</a></h2>
 
-      <a href="registroEmocoes.html"><button type="button" class="entrar">Entrar</button></a>
+  <button type="button" class="entrar" id="btnEntrar">Entrar</button>
     </form>
 
     <div class="logo">
@@ -53,5 +53,15 @@
   </div>
 
   <script type="module" src="./js/btnPassword.js"></script>
+  <script>
+    // salva email digitado em localStorage e redireciona
+    document.getElementById('btnEntrar').addEventListener('click', function (){
+      const emailInput = document.getElementById('email');
+      if (emailInput && emailInput.value) {
+        localStorage.setItem('userEmail', emailInput.value);
+      }
+      window.location.href = 'registroEmocoes.html';
+    });
+  </script>
 </body>
 </html>

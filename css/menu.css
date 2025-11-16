@@ -29,6 +29,13 @@ body{
     overflow: hidden;
 }
 
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
 .btnMenu{
     position: fixed;
     top: 30px;
@@ -94,13 +101,6 @@ body{
     text-align: center;
 }
 
-.navbar {
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-   
-}
-
 .nav-links {
     width: 100%;
     display: flex;
@@ -115,4 +115,49 @@ body{
         font-family: "Poppins";
         font-weight: 500;
     }
+}
+
+/* overlay do menu lateral */
+.menu-backdrop{
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.4);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 200ms ease;
+    z-index: 2500;
+}
+
+.menu-backdrop.active{
+    opacity: 1;
+    visibility: visible;
+}
+
+.menu-overlay{
+    position: fixed;
+    top: 0;
+    left: -320px; /* escondido à esquerda */
+    width: 320px;
+    height: 100vh;
+    background: linear-gradient(#9B5DE5, #00BBF9);
+    box-shadow: 2px 0 20px rgba(0,0,0,0.3);
+    color: white;
+    z-index: 2600;
+    transition: left 260ms cubic-bezier(.2,.8,.2,1);
+    padding: 1.5rem;
+    overflow-y: auto;
+}
+
+.menu-overlay.active{
+    left: 0; /* desliza para dentro */
+}
+
+.menu-overlay .close-btn{
+    background: transparent;
+    border: none;
+    color: #fff;
+    font-size: 20px;
+    position: absolute;
+    top: 12px;
+    right: 12px;
 }
