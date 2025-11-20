@@ -23,7 +23,7 @@ h1{
   gap: 0.5rem;
 }
 
-input {
+.form input {
   width: 80vw;
   margin: 0.5rem 0;
   padding: 0.8rem;
@@ -32,30 +32,43 @@ input {
   background-color: #0856a098;
 }
 
-::placeholder{
+input::placeholder{
   color: #0857A0;
   font-weight: bold;
+}
+
+input:focus{
+  outline: 3px solid #0857A0;
 }
 
 #dados-senha { 
   position: relative; 
 }
 
-.btnSenha {
+.input-senha-wrapper {
+  position: relative;
+}
+
+/* Ícone do olho */
+.btnSenha,
+.btnConfirmeSenha {
   position: absolute;
   right: 12px;
-  top: 55%;
+  top: 50%;
+  transform: translateY(-50%);
   cursor: pointer;
-  font-size: 22px;
-  color: black;
+  font-size: 24px;
+  color: #0c0c0c;
   user-select: none;
+  z-index: 5;
 }
 
 /* garante que o ícone "on" fique no mesmo lugar quando exibido */
-#iconOn { 
+#iconOn, #iconOn2 { 
   right: 12px; 
 }
-#iconOff { 
+
+#iconOff, #iconOff2 { 
   right: 12px; 
 }
 

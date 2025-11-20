@@ -14,15 +14,19 @@
   }
 
   /* Remove o texto padrão (ex: "dd/mm/aaaa") */
-    input[type="date"]::-webkit-datetime-edit {
-      color: transparent;
-    }
+  input[type="date"]::-webkit-datetime-edit {
+    color: transparent;
+  }
 
-    /* Mostra o texto normalmente quando o usuário seleciona uma data */
-    input[type="date"]:focus::-webkit-datetime-edit,
-    input[type="date"]:valid::-webkit-datetime-edit {
-      color: #000; /* ou a cor que quiser */
-    }
+  /* Mostra o texto normalmente quando o usuário seleciona uma data */
+  input[type="date"]:focus::-webkit-datetime-edit,
+  input[type="date"]:valid::-webkit-datetime-edit {
+    color: #000; /* ou a cor que quiser */
+  }
+
+  input:focus{
+    outline: 3px solid #0857A0;
+  }
 }
 
 

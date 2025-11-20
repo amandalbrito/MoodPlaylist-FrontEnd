@@ -97,6 +97,10 @@ textarea{
     resize: vertical;
 }
 
+textarea:focus{
+  outline: 3px solid #0857A0;
+}
+
 .gerarPlaylist{
     border-radius: 20px;
     margin-top: 2rem;

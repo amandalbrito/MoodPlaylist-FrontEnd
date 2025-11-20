@@ -33,27 +33,41 @@ input {
   background-color: #0856a098;
 }
 
-::placeholder{
+input::placeholder{
   color: #0857A0;
   font-weight: bold;
 }
 
-.btn-password{
-  display: flex;
-  width: 15vw;
-  height: 4vh;
-  border-radius: 35px;
-  padding: 2px;
-  align-items: center;
-  justify-content: center;
-  margin-left: 80%;
-  margin-top: -1.2rem;
-  background-color: #002d68;
-  color: #fff;
-  font-size: 0.7rem;
-  z-index: 1000;
+input:focus{
+  outline: 3px solid #0857A0;
 }
 
+.input-senha-wrapper {
+  position: relative;
+}
+
+/* Ícone do olho */
+.btnSenha,
+.btnConfirmeSenha {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  font-size: 24px;
+  color: #0c0c0c;
+  user-select: none;
+  z-index: 5;
+}
+
+/* garante que o ícone "on" fique no mesmo lugar quando exibido */
+#iconOn, #iconOn2 { 
+  right: 12px; 
+}
+
+#iconOff, #iconOff2 { 
+  right: 12px; 
+}
 .cadastro{
   color: #0857A0;
   font-size: 0.7rem;

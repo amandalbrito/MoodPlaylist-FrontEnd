@@ -1,42 +1,33 @@
-// const btnPassword = document.querySelector('.btn-password');
-// const btnConfirmePassword = document.querySelector('.btn-confirmePassword')
-// const inputPassword = document.querySelector('#password');
-// const inputConfirmePassword = document.querySelector('#confirmePassword');
-// let showPassword = false;
-
-// btnPassword.addEventListener('click', () => {
-//   showPassword = !showPassword;
-
-//   inputPassword.type = showPassword ? 'text' : 'password';
-
-//   btnPassword.textContent = showPassword ? 'Ocultar' : 'Mostrar';
-// });
-
-// btnConfirmePassword.addEventListener('click', () => {
-//   showPassword = !showPassword;
-
-//   inputConfirmePassword.type = showPassword ? 'text' : 'password';
-
-//   btnConfirmePassword.textContent = showPassword ? 'Ocultar' : 'Mostrar';
-// });
-
-
-// ----- Alternar ícone de mostrar/ocultar senha -----
-
 const iconOff = document.getElementById("iconOff");
 const iconOn = document.getElementById("iconOn");
+const iconOff2 = document.getElementById("iconOff2");
+const iconOn2 = document.getElementById("iconOn2");
 const inputSenha = document.getElementById("inputSenha");
+const inputConfirmeSenha = document.getElementById("inputConfirmeSenha")
 
 // Mostrar senha
 iconOff.addEventListener("click", () => {
-    inputSenha.type = "text";      // mostra senha
+    inputSenha.type = "text";
     iconOff.style.display = "none";
     iconOn.style.display = "block";
 });
 
 // Ocultar senha
 iconOn.addEventListener("click", () => {
-    inputSenha.type = "password";  // oculta senha
+    inputSenha.type = "password";
     iconOn.style.display = "none";
     iconOff.style.display = "block";
+});
+
+iconOff2.addEventListener("click", () => {
+    inputConfirmeSenha.type = "text";
+    iconOff2.style.display = "none";
+    iconOn2.style.display = "block";
+});
+
+// Ocultar senha
+iconOn2.addEventListener("click", () => {
+    inputConfirmeSenha.type = "password";
+    iconOn2.style.display = "none";
+    iconOff2.style.display = "block";
 });

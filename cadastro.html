@@ -40,16 +40,17 @@
 
       <input type="email" name="confirmeEmail" id="confirmeEmail" placeholder="Confirme seu E-mail" required />
 
-      <input type="password" id="password" placeholder="Senha" required />
+      <div class="input-senha-wrapper">
+        <input type="password" id="inputSenha" placeholder="Senha" required />
+        <span class="material-symbols-outlined btnSenha" id="iconOff">visibility_off</span>
+        <span class="material-symbols-outlined btnSenha" id="iconOn" style="display:none">visibility</span>
+      </div>
 
-      <button class="btn-password" type="button">Mostrar</button>
-
-      <input type="password" id="confirmePassword" placeholder="Confirme sua Senha" required />
-
-      <button class="btn-confirmePassword" type="button">
-        <span class="material-symbols-outlined btnSenha" id="iconOff" aria-label="Mostrar senha">visibility_off</span>
-        <span class="material-symbols-outlined btnSenha" id="iconOn" aria-label="Ocultar senha" style="display:none">visibility</span>
-      </button>
+      <div class="input-senha-wrapper">
+        <input type="password" id="inputConfirmeSenha" placeholder="Confirme sua Senha" required />
+        <span class="material-symbols-outlined btnConfirmeSenha" id="iconOff2">visibility_off</span>
+        <span class="material-symbols-outlined btnConfirmeSenha" id="iconOn2" style="display:none">visibility</span>
+      </div>
 
       <div class="input-wrapper">
         <input type="date" id="date" required />
