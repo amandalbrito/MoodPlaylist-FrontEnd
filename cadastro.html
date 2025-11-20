@@ -6,6 +6,8 @@
     <title>Cadastre-se</title>
     <link rel="stylesheet" href="./css/global.css">
     <link rel="stylesheet" href="./css/cadastro.css">
+    <!-- Import correto dos ícones Material Symbols -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet" />
 </head>
 <body>
 
@@ -44,7 +46,10 @@
 
       <input type="password" id="confirmePassword" placeholder="Confirme sua Senha" required />
 
-      <button class="btn-confirmePassword" type="button">Mostrar</button>
+      <button class="btn-confirmePassword" type="button">
+        <span class="material-symbols-outlined btnSenha" id="iconOff" aria-label="Mostrar senha">visibility_off</span>
+        <span class="material-symbols-outlined btnSenha" id="iconOn" aria-label="Ocultar senha" style="display:none">visibility</span>
+      </button>
 
       <div class="input-wrapper">
         <input type="date" id="date" required />

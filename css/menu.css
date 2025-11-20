@@ -17,16 +17,23 @@ body{
     font-family: 'Poppins';
 }
 
-.container{
-    width: 95vw;
+.menu-overlay{
+    width: 97vw;
     height: 98vh;
     background: linear-gradient(#9B5DE5, #00BBF9);
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
     color: white;
     display: flex;
     flex-direction: column;
-    padding-top: 60px;
     overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: -360px; /* escondido à esquerda */
+    background: linear-gradient(#9B5DE5, #00BBF9);
+    color: white;
+    z-index: 2600;
+    transition: left 260ms cubic-bezier(.2,.8,.2,1);
+    overflow-y: auto;
+    justify-content: center;
 }
 
 .navbar {
@@ -40,58 +47,74 @@ body{
     position: fixed;
     top: 30px;
     left: 20px;
-    width: 10vw;
-    height: 10vw;
-    padding: 0.35rem;
+    width: 12vw;
+    height: 12vw;
     background: #AC72F2;
     border: none;
     border-radius: 50%;
-    color: #ffffff;
+    color: #fff;
     cursor: pointer;
-    z-index: 3000;
-    transition: transform 0.3s ease;
+    z-index: 4000;
     display: flex;
+    align-items: center;
     justify-content: center;
+    font-size: 32px;
+    transition: transform .25s ease, opacity .25s ease;
 }
 
-/* .pulse {
-    animation: pulse 2s infinite;
+.btnMenu .icon-menu {
+    display: block;
+    font-size: 26px;
+    transition: opacity .2s ease;
 }
 
-@keyframes pulse {
-    0% { transform: scale(0.5) }
-    10% { transform: scale(0.5) }
-    20% { transform: scale(0.5) }
-    30% { transform: scale(0.5) }
-    40% { transform: scale(0.8) }
-    100% { transform: scale(0.5) }
-} */
+.btnMenu .icon-close {
+    display: none;
+    font-size: 26px;
+    transition: opacity .2s ease;
+}
 
-.usuario{
+/* Quando o menu estiver ativo, troca os ícones */
+.btnMenu.active .icon-menu {
+    display: none;
+}
+
+.btnMenu.active .icon-close {
+    display: block;
+}
+
+.usuario {
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 20px;    
+    margin-bottom: 20px;
+}
+
+.profile-header {
+    position: relative;
 }
 
 .avatar {
+    margin-bottom: 15%;
+}
+
+.avatar img {
     width: 35vw;
-    height: 20vh;
+    max-width: 20vh; 
+    aspect-ratio: 1/1; 
     border-radius: 50%;
     overflow: hidden;
-    border: 3px solid rgba(255, 255, 255, 0.7);
-    margin-bottom: 15px;
-}
-.avatar img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .name {
     font-size: 24px;
     text-align: center;
+    color: #fff;
 }
 
 .bio {
@@ -102,60 +125,42 @@ body{
 }
 
 .nav-links {
-    width: 100%;
+    width: 95%;
     display: flex;
     font-size: 24px;
     cursor: pointer;
     flex-direction: column;
+}
 
-    li{
-        border-bottom: 1px solid rgba(255, 255, 255, 0.30);
-        padding: 10px;
-        margin-bottom: 5%;
-        font-family: "Poppins";
-        font-weight: 500;
-    }
+.nav-links li{
+    border-bottom: 1px solid #EEEEEE;
+    padding-bottom: 10px;
+    margin-bottom: 10%;
+    font-family: "Poppins";
+    font-weight: 500;
+}
+
+.menuLink{
+    margin-left: 1.5rem;
 }
 
 /* overlay do menu lateral */
 .menu-backdrop{
     position: fixed;
     inset: 0;
-    background: rgba(0,0,0,0.4);
     opacity: 0;
     visibility: hidden;
     transition: opacity 200ms ease;
     z-index: 2500;
 }
 
-.menu-backdrop.active{
-    opacity: 1;
-    visibility: visible;
-}
-
-.menu-overlay{
-    position: fixed;
-    top: 0;
-    left: -320px; /* escondido à esquerda */
-    width: 320px;
-    height: 100vh;
-    background: linear-gradient(#9B5DE5, #00BBF9);
-    box-shadow: 2px 0 20px rgba(0,0,0,0.3);
-    color: white;
-    z-index: 2600;
-    transition: left 260ms cubic-bezier(.2,.8,.2,1);
-    padding: 1.5rem;
-    overflow-y: auto;
-}
-
 .menu-overlay.active{
     left: 0; /* desliza para dentro */
 }
 
-.menu-overlay .close-btn{
+.menu-overlay .closeMenu{
     background: transparent;
     border: none;
-    color: #fff;
     font-size: 20px;
     position: absolute;
     top: 12px;

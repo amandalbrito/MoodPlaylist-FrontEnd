@@ -37,36 +37,26 @@ input {
   font-weight: bold;
 }
 
-.btn-password{
-  display: flex;
-  width: 15vw;
-  height: 4vh;
-  border-radius: 35px;
-  padding: 2px;
-  align-items: center;
-  justify-content: center;
-  margin-left: 70%;
-  margin-top: -3rem;
-  background-color: #002d68;
-  color: #fff;
-  font-size: 0.7rem;
-  z-index: 1000;
+#dados-senha { 
+  position: relative; 
 }
 
-.btn-confirmePassword{
-  display: flex;
-  width: 15vw;
-  height: 4vh;
-  border-radius: 35px;
-  padding: 2px;
-  align-items: center;
-  justify-content: center;
-  margin-left: 70%;
-  margin-top: -3rem;
-  background-color: #002d68;
-  color: #fff;
-  font-size: 0.7rem;
-  z-index: 1000;
+.btnSenha {
+  position: absolute;
+  right: 12px;
+  top: 55%;
+  cursor: pointer;
+  font-size: 22px;
+  color: black;
+  user-select: none;
+}
+
+/* garante que o ícone "on" fique no mesmo lugar quando exibido */
+#iconOn { 
+  right: 12px; 
+}
+#iconOff { 
+  right: 12px; 
 }
 
 .input-wrapper {
