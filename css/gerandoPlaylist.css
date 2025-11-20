@@ -1,0 +1,35 @@
+.circulosSuperior{
+    position: fixed;
+    top: 8%;
+    flex-direction: column;
+    left: 0;
+}
+
+.circulo1{
+    width: 13vw;
+    height: 6vh;
+    left: 0px;
+    border-radius: 50%;
+    background: #AC72F2;
+    border: none;
+    border-radius: 50%;
+    z-index: 3000;
+    display: flex;
+    margin-left: 1rem;
+}
+
+.circulo2{
+    width: 11vw;
+    height: 5vh;
+    border-radius: 50%;
+    background: #AC72F2;
+    margin-left: 5rem;
+    border: none;
+}
+
+
+.carregamento{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
