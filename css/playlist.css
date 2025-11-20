@@ -1,0 +1,84 @@
+body{
+    font-family: 'Poppins';
+    width: 100%;
+    height: 100%;
+    background-color: #9B5DE5;
+}
+
+.circulosSuperior{
+    position: fixed;
+    top: 12%;
+    flex-direction: column;
+    left: 0;
+}
+
+.circulo1{
+    width: 13vw;
+    height: 6vh;
+    left: 0px;
+    border-radius: 50%;
+    background: #AC72F2;
+    border: none;
+    border-radius: 50%;
+    z-index: 3000;
+    display: flex;
+    margin-left: 4rem;
+}
+
+.circulo2{
+    width: 11vw;
+    height: 5vh;
+    border-radius: 50%;
+    background: #AC72F2;
+    margin-left: 1rem;
+    border: none;
+}
+
+.material-symbols-outlined {
+  font-family: 'Material Symbols Outlined';
+  font-variation-settings:
+    'FILL' 1,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 48;
+  font-size: 48px;
+  color: #fff;
+}
+
+.container-Playlists{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    gap: 0 2rem;
+    margin-top: 5%;
+}
+
+.container-Playlists img {
+    width: 50vw;
+    max-width: 80vw;
+    height: 100vh;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 4px 4px rgba(0, 0, 0, 0.2);
+}
+
+.playlist-inline{
+    display: flex;
+    width: 100vw;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 1rem 4rem;
+}
+
+h1 {
+    color: #fefefe;
+    font-weight: bold;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.45), 4px 4px 10px rgba(0, 0, 0, 0.3);
+    font-size: 1.5rem;
+}

@@ -16,5 +16,50 @@
 
         <div class="carregamento"><img src="./img/Animation - 1763423035287.gif" alt=""></div>
     </div>
+    
+    <style>
+    /* transição simples para fade out/in */
+    .page-fade-enter {
+        opacity: 0;
+        transition: opacity 600ms ease-in-out;
+    }
+    .page-fade-enter.page-fade-enter-active {
+        opacity: 1;
+    }
+    .page-fade-exit {
+        opacity: 1;
+        transition: opacity 600ms ease-in-out;
+    }
+    .page-fade-exit.page-fade-exit-active {
+        opacity: 0;
+    }
+    </style>
+
+    <script>
+    // Aplica um fade-out e redireciona após 10 segundos
+    (function(){
+        var delayMs = 5000;
+        var body = document.documentElement || document.body;
+
+        // Inicial: aplica classe de enter para garantir opacidade 1
+        body.classList.add('page-fade-enter');
+        setTimeout(function(){
+            body.classList.add('page-fade-enter-active');
+        }, 20);
+
+        // Depois de delay, aplica fade-out e redireciona
+        setTimeout(function(){
+            body.classList.remove('page-fade-enter', 'page-fade-enter-active');
+            body.classList.add('page-fade-exit');
+            // força o reflow para garantir transição
+            void body.offsetWidth;
+            body.classList.add('page-fade-exit-active');
+            // aguarda a duração da transição antes de navegar
+            setTimeout(function(){
+                window.location.href = "playlist.html";
+            }, 620);
+        }, delayMs);
+    })();
+    </script>
 </body>
 </html>
