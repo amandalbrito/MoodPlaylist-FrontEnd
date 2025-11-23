@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,18 +7,22 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/gerandoPlaylist.css">
 </head>
-<body>
-    <div class="container">
-        <div class="circulosSuperior">
-            <div class="circulo1"></div>
-            <div class="circulo2"></div>
+<body aria-busy="true" aria-live="polite">
+
+    <div class="container" role="main" aria-label="Tela de carregamento para geração da playlist">
+        <div class="circulosSuperior" role="img" aria-label="Elementos decorativos circulares no topo da tela">
+            <div class="circulo1" aria-label="Círculo decorativo superior"></div>
+            <div class="circulo2" aria-label="Círculo decorativo superior"></div>
         </div>
 
-        <div class="carregamento"><img src="./img/Animation - 1763423035287.gif" alt=""></div>
+        <div class="carregamento" aria-label="Carregando playlist, aguarde">
+            <img src="./img/Animation - 1763423035287.gif" alt="Animação de carregamento: círculo girando">
+        </div>
     </div>
     
+
+    <!-- transição simples para redirecionamento de tela  -->
     <style>
-    /* transição simples para fade out/in */
     .page-fade-enter {
         opacity: 0;
         transition: opacity 600ms ease-in-out;
@@ -35,8 +39,9 @@
     }
     </style>
 
+    <!-- redireciona após 10 segundos -->
+
     <script>
-    // Aplica um fade-out e redireciona após 10 segundos
     (function(){
         var delayMs = 5000;
         var body = document.documentElement || document.body;

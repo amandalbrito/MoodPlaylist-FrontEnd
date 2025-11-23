@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,38 +7,37 @@
     <link rel="stylesheet" href="./css/registroEmocoes.css">
     <link rel="stylesheet" href="./css/home.css">
     <link rel="stylesheet" href="./css/menu.css">
-    <!-- Import correto dos ícones Material Symbols -->
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet" />
 </head>
 <body>
 
-    <!-- Botão de menu -->
-    <button class="btnMenu" id="openMenu">
+    <button class="btnMenu" id="openMenu" aria-label="Abrir menu lateral">
       <span class="material-symbols-outlined icon-menu">menu</span>
       <span class="material-symbols-outlined icon-close">close</span>
     </button>
 
-
     <div class="container-emocoes">
-        <div class="emocoesEmojis">
-            <button><span class="material-symbols-outlined raiva" id="raiva">sentiment_extremely_dissatisfied</span></button>
-            <button><span class="material-symbols-outlined tristeza" id="tristeza">sentiment_dissatisfied</span></button>
-            <button><span class="material-symbols-outlined neutro" id="neutro">sentiment_neutral</span></button>
-            <button><span class="material-symbols-outlined felicidade" id="felicidade">sentiment_satisfied</span></button>
-            <button><span class="material-symbols-outlined muitoFeliz" id="muitoFeliz">sentiment_excited</span></button>
+        <div class="emocoesEmojis" aria-label="Seleção de emoções">
+            <button aria-label="Selecionar emoção: raiva"><span class="material-symbols-outlined raiva" id="raiva">sentiment_extremely_dissatisfied</span></button>
+            <button aria-label="Selecionar emoção: tristeza"><span class="material-symbols-outlined tristeza" id="tristeza">sentiment_dissatisfied</span></button>
+            <button aria-label="Selecionar emoção: neutro"><span class="material-symbols-outlined neutro" id="neutro">sentiment_neutral</span></button>
+            <button aria-label="Selecionar emoção: felicidade"><span class="material-symbols-outlined felicidade" id="felicidade">sentiment_satisfied</span></button>
+            <button aria-label="Selecionar emoção: muito feliz"><span class="material-symbols-outlined muitoFeliz" id="muitoFeliz">sentiment_excited</span></button>
         </div>
 
-        <div class="regua-emocoes">
-            <button class="raiva" ></button>
-            <button class="tristeza"></button>
-            <button class="neutro" ></button>
-            <button class="felicidade"></button>
-            <button class="muitoFeliz"></button>
+        <div class="regua-emocoes" aria-label="Intensidade da emoção selecionada">
+            <button class="raiva" aria-label="Intensidade muito baixa"></button>
+            <button class="tristeza" aria-label="Intensidade baixa"></button>
+            <button class="neutro" aria-label="Intensidade moderada"></button>
+            <button class="felicidade" aria-label="Intensidade alta"></button>
+            <button class="muitoFeliz" aria-label="Intensidade muito alta"></button>
         </div>
 
-        <textarea name="emocoesTexto" id="emocoesEmojis" placeholder="Digite o que voê está sentindo..."></textarea>
+        <textarea name="emocoesTexto" id="emocoesEmojis" placeholder="Digite o que você está sentindo..." aria-label="Campo para descrever suas emoções"></textarea>
 
-        <button class="gerarPlaylist" id="gerarPlaylist"> <a href="./gerandoPlayList.html">Gerar Playlist</a></button>
+        <button class="gerarPlaylist" id="gerarPlaylist">
+            <a href="./gerandoPlayList.html" aria-label="Gerar playlist baseada na emoção selecionada">Gerar Playlist</a>
+        </button>
     </div>
 
     <script src="./js/menuLateral.js"></script>

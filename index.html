@@ -3,21 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MoodPlaylist</title>
+    <title>VibeLog</title>
     <link rel="stylesheet" href="./css/style.css">
 </head>
-<body>
+<body role="main" aria-live="polite">
     <div class="container-main">
-        <div id="titulo">
-            <h1 class="titulo">VibeLog</h1>
+
+        <div id="titulo" role="banner" aria-label="Título e logotipo do aplicativo VibeLog">
+            <h1 class="titulo" aria-label="Nome do aplicativo VibeLog">VibeLog</h1>
+
             <div class="logo">
-                <img src="./img/logo.png" alt="logo VibeLog azul" class="img-logo">
-                <p class="logo-gif"></p>
+                <img src="./img/logo.png" alt="Logotipo azul do VibeLog" class="img-logo">
+                <p class="logo-gif" aria-label="Animação decorativa em formato de círculo pulsante"></p>
             </div>
         </div>
+
         <div class="entrar">
-            <a href="login.html"><button>Começar</button></a>
+            <a href="login.html">
+                <button aria-label="Ir para tela de login para começar">Começar</button>
+            </a>
         </div>
+
     </div>
 </body>
 </html>

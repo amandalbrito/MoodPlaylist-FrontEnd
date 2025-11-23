@@ -12,7 +12,7 @@
 <body>
 
   <!-- ONDA DECORATIVA - PICO FINO NO CENTRO -->
-  <div class="wave-container">
+  <div class="wave-container" role="img" aria-label="Onda decorativa no topo da página">
     <svg viewBox="0 0 1400 120" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" aria-hidden="true">
       <defs>
         <linearGradient id="gradient" x1="1" y1="1" x2="1" y2="0">
@@ -21,7 +21,6 @@
         </linearGradient>
       </defs>
 
-      <!-- path com duas grandes colinas e um pico fino no centro -->
       <path fill="url(#gradient)" d="
         M0,0
         L0,120
@@ -31,41 +30,44 @@
     </svg>
   </div>
 
-  <div class="container">
+  <div class="container" role="main" aria-label="Área principal de cadastro">
 
-    <h1>Cadastre-se</h1>
+    <h1 aria-label="Formulário de cadastro">Cadastre-se</h1>
 
-    <form class="form">
-      <input type="email" name="email" id="email" placeholder="E-mail" required />
+    <form class="form" aria-label="Formulário para criação de conta">
+      <input type="email" name="email" id="email" placeholder="E-mail" required aria-label="Digite seu e-mail" />
 
-      <input type="email" name="confirmeEmail" id="confirmeEmail" placeholder="Confirme seu E-mail" required />
+      <input type="email" name="confirmeEmail" id="confirmeEmail" placeholder="Confirme seu E-mail" required aria-label="Confirme seu e-mail" />
 
-      <div class="input-senha-wrapper">
-        <input type="password" id="inputSenha" placeholder="Senha" required />
-        <span class="material-symbols-outlined btnSenha" id="iconOff">visibility_off</span>
-        <span class="material-symbols-outlined btnSenha" id="iconOn" style="display:none">visibility</span>
+      <div class="input-senha-wrapper" aria-label="Campo para digitar a senha">
+        <input type="password" id="inputSenha" placeholder="Senha" required aria-label="Digite sua senha" />
+        <span class="material-symbols-outlined btnSenha" id="iconOff" aria-label="Mostrar senha" role="button">visibility_off</span>
+        <span class="material-symbols-outlined btnSenha" id="iconOn" style="display:none" aria-label="Ocultar senha" role="button">visibility</span>
       </div>
 
-      <div class="input-senha-wrapper">
-        <input type="password" id="inputConfirmeSenha" placeholder="Confirme sua Senha" required />
-        <span class="material-symbols-outlined btnConfirmeSenha" id="iconOff2">visibility_off</span>
-        <span class="material-symbols-outlined btnConfirmeSenha" id="iconOn2" style="display:none">visibility</span>
+      <div class="input-senha-wrapper" aria-label="Campo para confirmar sua senha">
+        <input type="password" id="inputConfirmeSenha" placeholder="Confirme sua Senha" required aria-label="Digite novamente sua senha" />
+        <span class="material-symbols-outlined btnConfirmeSenha" id="iconOff2" aria-label="Mostrar senha" role="button">visibility_off</span>
+        <span class="material-symbols-outlined btnConfirmeSenha" id="iconOn2" style="display:none" aria-label="Ocultar senha" role="button">visibility</span>
       </div>
 
-      <div class="input-wrapper">
-        <input type="date" id="date" required />
-        <span class="placeholder">Data de Nascimento</span>
+      <div class="input-wrapper" aria-label="Campo de data de nascimento">
+        <input type="date" id="date" required aria-label="Selecione sua data de nascimento" />
+        <span class="placeholder" aria-hidden="false">Data de Nascimento</span>
       </div>
 
+      <h2 class="redefinir">
+        <a href="redefinir.html" aria-label="Esqueci a senha, redefinir acesso">Esqueceu a senha? REDEFINIR</a>
+      </h2>
 
-      <h2 class="redefinir"><a href="redefinir.html"><a href="redefinir.html">Esqueceu a senha? REDEFINIR</a></h2>
-
-      <a href="login.html"><button type="button" class="entrar">Entrar</button></a>
+      <a href="login.html" aria-label="Ir para a página de login">
+        <button type="button" class="entrar" aria-label="Entrar na conta">Entrar</button>
+      </a>
     </form>
 
-    <div class="logo">
-        <img src="./img/logo.png" alt="logo VibeLog azul" class="img-logo">
-        <p class="logo-gif"></p>
+    <div class="logo" aria-label="Logo do sistema VibeLog">
+        <img src="./img/logo.png" alt="Logo VibeLog azul" class="img-logo">
+        <p class="logo-gif" aria-label="Animação circular decorativa"></p>
     </div>
     
   </div>

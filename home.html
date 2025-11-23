@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,13 +9,12 @@
     <link rel="stylesheet" href="./css/home.css">
     <!-- Import dos ícones Material Symbols -->
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet" />
-
 </head>
-<body>
+<body role="main" aria-live="polite">
 
   <!-- ONDA DECORATIVA - PICO FINO NO CENTRO -->
-  <div class="wave-container">
-    <svg viewBox="0 0 1400 120" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" aria-hidden="true">
+  <div class="wave-container" aria-hidden="true">
+    <svg viewBox="0 0 1400 120" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
       <defs>
         <linearGradient id="gradient" x1="1" y1="1" x2="1" y2="0">
           <stop offset="30%" stop-color="#00BBF9" /> 
@@ -32,50 +31,54 @@
     </svg>
   </div>
 
-
-
-  <div class="header">
+  <div class="header" role="banner">
       <!-- Botão de menu -->
-      <button class="btnMenu" id="openMenu">
-        <span class="material-symbols-outlined icon-menu">menu</span>
-        <span class="material-symbols-outlined icon-close">close</span>
+      <button class="btnMenu" id="openMenu" aria-label="Abrir ou fechar o menu lateral">
+        <span class="material-symbols-outlined icon-menu" aria-hidden="true">menu</span>
+        <span class="material-symbols-outlined icon-close" aria-hidden="true">close</span>
       </button>
 
-      <h1>VibeLog</h1>
+      <h1 aria-label="Página inicial do VibeLog">VibeLog</h1>
   </div>
 
   <div class="inlineGerarPlaylist">
     <div class="collunGerarPlaylist">
-      <h2>Olá, como está se sentindo hoje?</h2>
-      <button class="btnGerarPlaylist"> <a href="./registroEmocoes.html"> Gerar Playlist </a> </button>
+      <h2 aria-label="Pergunta sobre como você está se sentindo">Olá, como está se sentindo hoje?</h2>
+      <button class="btnGerarPlaylist" aria-label="Ir para a página de Registro de Emoções para gerar uma playlist">
+        <a href="./registroEmocoes.html"> Gerar Playlist </a>
+      </button>
     </div>
-    <img src="./img/Dance.gif" alt="Três pessoas comemorando">
+    <img src="./img/Dance.gif" alt="Três pessoas dançando e comemorando">
   </div>
 
-  <div class="line"></div>
-  <p>Últimas Geradas</p>
+  <div class="line" role="separator" aria-hidden="true"></div>
+  <p aria-label="Histórico das últimas playlists geradas">Últimas Geradas</p>
 
-  <div class="historicoPlaylist">
-    <div class="playlistItem">
-      <img src="" alt="Capa da playlist 1">
+  <div class="historicoPlaylist" role="list" aria-label="Lista de playlists geradas recentemente">
+
+    <div class="playlistItem" role="listitem" aria-label="Playlist 1 gerada recentemente">
+      <img src="" alt="Imagem de capa da playlist 1">
       <p>Playlist 1</p>
       <p>10 min</p>
-      <span class="material-symbols-outlined">play_arrow</span>
+      <span class="material-symbols-outlined" aria-label="Ouvir a playlist 1">play_arrow</span>
     </div>
-    <div class="playlistItem">
-      <img src="" alt="Capa da playlist 2">
+
+    <div class="playlistItem" role="listitem" aria-label="Playlist 2 gerada recentemente">
+      <img src="" alt="Imagem de capa da playlist 2">
       <p>Playlist 2</p>
       <p>10 min</p>
-      <span class="material-symbols-outlined">play_arrow</span>
+      <span class="material-symbols-outlined" aria-label="Ouvir a playlist 2">play_arrow</span>
     </div>
-    <div class="playlistItem">
-      <img src="" alt="Capa da playlist 3">
+
+    <div class="playlistItem" role="listitem" aria-label="Playlist 3 gerada recentemente">
+      <img src="" alt="Imagem de capa da playlist 3">
       <p>Playlist 3</p>
       <p>10 min</p>
-      <span class="material-symbols-outlined">play_arrow</span>
+      <span class="material-symbols-outlined" aria-label="Ouvir a playlist 3">play_arrow</span>
     </div>
+
   </div>
 
-    <script src="./js/menuLateral.js"></script>
+  <script src="./js/menuLateral.js"></script>
 </body>
 </html>
