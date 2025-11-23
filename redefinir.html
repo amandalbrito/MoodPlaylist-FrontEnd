@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redefinir Senha</title>
+    <link rel="stylesheet" href="./css/global.css">
+    <link rel="stylesheet" href="./css/redefinir.css">
+</head>
+<body>
+    <!-- ONDA DECORATIVA - PICO FINO NO CENTRO -->
+    <div class="wave-container" role="img" aria-label="Onda decorativa no topo da página">
+        <svg viewBox="0 0 1400 120" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" aria-hidden="true">
+            <defs>
+            <linearGradient id="gradient" x1="1" y1="1" x2="1" y2="0">
+                <stop offset="30%" stop-color="#00BBF9" /> 
+                <stop offset="80%" stop-color="#7D2DDD" />
+            </linearGradient>
+            </defs>
+
+            <path fill="url(#gradient)" d="
+            M0,0
+            L0,120
+            C850,50 900,0 1440,115
+            L1440,0
+            Z"/>
+        </svg>
+    </div>
+
+    <div class="container">
+            <h1>Redefinir Senha</h1>
+            <div class="container-itens">
+                <h2>Digite o e-mail cadastrado para receber uma senha provisória</h2>
+                <input type="email" id="email" class="email" placeholder="Digite seu E-mail" aria-label="Digite seu E-mail" required>
+                <button type="button" class="btn-redefinir" aria-label="Redefinir senha">Redefinir Senha</button>
+                <p id="status-envio"></p>
+            </div>
+            <h3><a href="./login.html" aria-label="Voltar Para o Login">Voltar para o Login</a></h3>
+    </div>
+
+    <div class="logo" aria-label="Logo do sistema VibeLog">
+        <img src="./img/logo.png" alt="Logo VibeLog azul" class="img-logo">
+        <p class="logo-gif" aria-label="Animação circular decorativa"></p>
+    </div>
+</body>
+</html>
