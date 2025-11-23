@@ -140,7 +140,7 @@
     padding: 4px 0;
 }
 
-.btnSenha {
+.btnSenha, .btnConfirmeSenha {
     position: absolute;
     right: 12px;
     top: 60%;

@@ -33,17 +33,27 @@
 
       <div class="container-inputs" aria-label="Dados pessoais do usuário">
 
-        <h3 class="dados-pessoais" id="dados-nome">Nome Completo <span class="linha-inferior"></span> </h3>
         <h3 class="dados-pessoais" id="dados-email">E-mail <span class="linha-inferior"></span> </h3>
         <h3 class="dados-pessoais" id="dados-senha">
-          Senha
+          Senha Atual
 
-          <!-- input real -->
-          <input type="password" id="inputSenha" class="campo-senha" placeholder="••••••••" aria-label="Campo de senha">
+          <input type="password" id="inputSenhaAtual" class="campo-senha" placeholder="••••••••" aria-label="Campo de senha">
 
           <!-- Ícones: um visível e outro escondido (inicialmente) -->
           <span class="material-symbols-outlined btnSenha" id="iconOff" aria-label="Mostrar senha">visibility_off</span>
           <span class="material-symbols-outlined btnSenha" id="iconOn" aria-label="Ocultar senha" style="display:none">visibility</span>
+
+          <span class="linha-inferior"></span>
+        </h3>
+
+        <h3 class="dados-pessoais" id="dados-senha">
+          Senha Nova
+
+          <input type="password" id="inputNovaSenha" class="campo-senha" placeholder="••••••••" aria-label="Campo de senha">
+
+          <!-- Ícones: um visível e outro escondido (inicialmente) -->
+          <span class="material-symbols-outlined btnConfirmeSenha" id="iconOff" aria-label="Mostrar senha">visibility_off</span>
+          <span class="material-symbols-outlined btnConfirmeSenha" id="iconOn" aria-label="Ocultar senha" style="display:none">visibility</span>
 
           <span class="linha-inferior"></span>
         </h3>

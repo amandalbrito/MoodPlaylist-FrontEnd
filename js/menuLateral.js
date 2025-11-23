@@ -32,7 +32,7 @@ async function loadMenu() {
         document.body.appendChild(menuBackdrop);
 
         // botão interno de fechar
-        const closeBtn = menuOverlay.querySelector(".closeMenu");
+        const closeBtn = menuOverlay.querySelector(".icon-close");
         closeBtn.addEventListener("click", closeMenu);
 
         // clicar no backdrop fecha
