@@ -74,6 +74,12 @@ input:focus{
   cursor: pointer;
 }
 
+.redefinir{
+  color: #0857A0;
+  font-size: 0.7rem;
+  cursor: pointer;
+}
+
 .entrar {
   background-color: #0857A0;
   color: #fff;

@@ -25,7 +25,7 @@ h1{
 
 .form input {
   width: 80vw;
-  margin: 0.5rem 0;
+  margin: 0.3rem 0;
   padding: 0.8rem;
   border: none;
   border-radius: 15px;
@@ -93,13 +93,6 @@ input:focus{
   display: none; /* esconde o placeholder quando o campo tem valor */
 }
 
-
-.redefinir{
-  color: #0857A0;
-  font-size: 0.7rem;
-  cursor: pointer;
-}
-
 .entrar {
   background-color: #0857A0;
   color: #fff;
@@ -112,7 +105,7 @@ input:focus{
   font-weight: bold;
   transition: 0.2s;
   justify-content: center;
-  margin-top: 10%;
+  margin-top: 5%;
 }
 
 #status {
