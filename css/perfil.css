@@ -45,41 +45,6 @@
     font-weight:100;
 }
 
-/*    NOME    */
-
-/* linha superior (começa após o texto) */
-#dados-nome::before {
-    content: "";
-    position: absolute;
-    top: 1rem;                    /* encostada no topo */
-    left: calc(100% - 170px);  /* ajuste para terminar após o texto */
-    right: 0;
-    height: 1px;
-    background-color: #fff;
-}
-
-/* linha direita */
-#dados-nome::after {
-    content: "";
-    position: absolute;
-    top: 1rem;
-    right: 0;
-    width: 1px;
-    height: 43px; /* altura do campo */
-    background-color: #fff;
-}
-
-/* linha inferior */
-#dados-nome .linha-inferior {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: -1rem;
-    width: 100%;
-    height: 1px;
-    background-color: #fff;
-    display: block;
-}
 
 
 /*   EMAIL   */
@@ -89,7 +54,7 @@
     content: "";
     position: absolute;
     top: 1rem;                    /* encostada no topo */
-    left: calc(100% - 230px);  /* ajuste para terminar após o texto */
+    left: calc(100% - 50vw);  /* ajuste para terminar após o texto */
     right: 0;
     height: 1px;
     background-color: #fff;
@@ -160,7 +125,7 @@
     content: "";
     position: absolute;
     top: 1rem;                    /* encostada no topo */
-    left: calc(100% - 230px);  /* ajuste para terminar após o texto */
+    left: calc(100% - 50vw);  /* ajuste para terminar após o texto */
     right: 0;
     height: 1px;
     background-color: #fff;
